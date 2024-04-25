@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class InventorySlot : MonoBehaviour
 {
     public ItemScriptableObject item;
     public int amount;
+    public bool isEmpty = true;
 }
