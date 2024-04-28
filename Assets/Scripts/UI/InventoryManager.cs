@@ -12,6 +12,8 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
+        UIPanel.SetActive(false);
+
         CameraSearch();
         ListFilling();
     }
@@ -53,18 +55,22 @@ public class InventoryManager : MonoBehaviour
     }
     private void PickUpItem()
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward); //mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, reachDistance))
         {
-            Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.green);
             var ComponentItem = hit.collider.gameObject.GetComponent<Item>();
 
-            if(ComponentItem != null)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                AddItem(ComponentItem.item, ComponentItem.amount);
-                Destroy(hit.collider.gameObject);
+                if (ComponentItem != null)
+                {
+                    AddItem(ComponentItem.item, ComponentItem.amount);
+                    Destroy(hit.collider.gameObject);
+                    
+                }
             }
+            Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.green);
         }
         else
         {
@@ -78,6 +84,7 @@ public class InventoryManager : MonoBehaviour
             if (slot.item == _item) //Проверяем нет ли подобного айтема в слотах
             {
                 slot.amount += _amount; //Добавляем к уже имеющимся айтемам те, что подобрали
+                slot.itemAmountText.text = slot.amount.ToString();
                 return;
             }
         }
@@ -89,7 +96,9 @@ public class InventoryManager : MonoBehaviour
                 slot.item = _item;
                 slot.amount = _amount;
                 slot.isEmpty = false;
-                return;
+                slot.SetIcon(_item.itemSprite);
+                slot.itemAmountText.text = _amount.ToString();
+                break;
             }
         }
     }
