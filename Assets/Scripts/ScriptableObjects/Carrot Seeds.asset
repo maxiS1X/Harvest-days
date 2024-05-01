@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Carrot Seeds
   m_EditorClassIdentifier: 
   type: 1
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 6628777958328256804, guid: 5a0a9efbdf707894586fd5656d24f887, type: 3}
   itemSprite: {fileID: 21300000, guid: 429af6680843fcc4281a52bfab62dd4a, type: 3}
   itemName: Carrot  Seeds
   itemDescription: High-quality carrot seeds for a bountiful harvest of sweet and

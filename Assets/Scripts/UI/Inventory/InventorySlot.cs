@@ -12,13 +12,17 @@ public class InventorySlot : MonoBehaviour
 
     private void Start()
     {
-        itemIcon = transform.GetChild(0).gameObject;
-        itemAmountText = transform.GetChild(1).GetComponent<TMP_Text>();
+        itemIcon = transform.GetChild(0).GetChild(0).gameObject;
+        itemAmountText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
     }
 
     public void SetIcon(Sprite iconSprite)
     {
         itemIcon.GetComponent<Image>().color = new Color(1, 1, 1, 1);
         itemIcon.GetComponent<Image>().sprite = iconSprite;
+    }
+    public void SetText()
+    {
+        itemAmountText.color = new Color(1, 1, 1, 1);
     }
 }
