@@ -6,13 +6,14 @@ public class InventoryManager : MonoBehaviour
     public Transform InventoryPanel;
     public List<InventorySlot> slots = new List<InventorySlot>(); // Создание списка слотов
     private Camera mainCamera;
-    public GameObject UIPanel;
-    private bool isOpened;
+    public GameObject InventoryBackground;
+    public bool isOpened;
     public float reachDistance = 3f; // Дистанция с которой можно поднять предмет
 
     private void Start()
     {
-        UIPanel.SetActive(false);
+        InventoryBackground.SetActive(false);
+        InventoryPanel.gameObject.SetActive(false);
 
         CameraSearch();
         ListFilling();
@@ -45,14 +46,16 @@ public class InventoryManager : MonoBehaviour
 
             if(isOpened)
             {
-                UIPanel.SetActive(true);
+                InventoryBackground.SetActive(true);
+                InventoryPanel.gameObject.SetActive(true);
                 gameObject.GetComponent<PlayerMouseMove>().enabled = false;
                 Cursor.lockState = CursorLockMode.None; // Анлочит курсор
                 Cursor.visible = true; // Делает видимым
             }
             else
             {
-                UIPanel.SetActive(false);
+                InventoryBackground.SetActive(false);
+                InventoryPanel.gameObject.SetActive(false);
                 gameObject.GetComponent<PlayerMouseMove>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
                 Cursor.visible = false; // Делает невидимым
@@ -109,7 +112,6 @@ public class InventoryManager : MonoBehaviour
                 slot.amount = _amount;
                 slot.isEmpty = false;
                 slot.SetIcon(_item.itemSprite);
-                slot.SetText();
                 slot.itemAmountText.text = _amount.ToString();
                 break;
             }

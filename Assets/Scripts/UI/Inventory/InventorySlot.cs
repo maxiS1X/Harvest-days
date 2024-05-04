@@ -10,7 +10,7 @@ public class InventorySlot : MonoBehaviour
     public GameObject itemIcon;
     public TMP_Text itemAmountText;
 
-    private void Start()
+    private void Awake()
     {
         itemIcon = transform.GetChild(0).GetChild(0).gameObject;
         itemAmountText = transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
@@ -20,9 +20,5 @@ public class InventorySlot : MonoBehaviour
     {
         itemIcon.GetComponent<Image>().color = new Color(1, 1, 1, 1);
         itemIcon.GetComponent<Image>().sprite = iconSprite;
-    }
-    public void SetText()
-    {
-        itemAmountText.color = new Color(1, 1, 1, 1);
     }
 }
