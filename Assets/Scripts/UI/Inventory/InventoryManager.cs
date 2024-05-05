@@ -4,6 +4,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public Transform InventoryPanel;
+    public Transform HotbarPanel;
     public List<InventorySlot> slots = new List<InventorySlot>(); // Создание списка слотов
     private Camera mainCamera;
     public GameObject InventoryBackground;
@@ -35,6 +36,13 @@ public class InventoryManager : MonoBehaviour
             if (InventoryPanel.GetChild(i).GetComponent<InventorySlot>() != null)
             {
                 slots.Add(InventoryPanel.GetChild(i).GetComponent<InventorySlot>());
+            }
+        }
+        for (int i = 0; i < HotbarPanel.childCount; i++)
+        {
+            if (HotbarPanel.GetChild(i).GetComponent<InventorySlot>() != null)
+            {
+                slots.Add(HotbarPanel.GetChild(i).GetComponent<InventorySlot>());
             }
         }
     }
@@ -99,7 +107,7 @@ public class InventoryManager : MonoBehaviour
                     slot.itemAmountText.text = slot.amount.ToString();
                     return;
                 }
-                break;
+                continue;
                 
             }
         }

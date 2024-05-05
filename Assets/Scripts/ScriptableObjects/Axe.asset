@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   type: 2
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 4664575331629299892, guid: 5e8380fc2fa650e4e8405dd2fe36c33a, type: 3}
+  itemSprite: {fileID: 21300000, guid: 20139e8e18f7b2640a93f86111e42571, type: 3}
   itemName: Axe
   itemDescription: Cut down a tree
   maxAmount: 1
