@@ -28,7 +28,7 @@ public class PlantSeeds : MonoBehaviour
                 var field = hit.collider.gameObject.GetComponent<Field>(); // Компонент из объекта грядки
                 var hotbarSlot = hotbarPanel.transform.GetChild(hotbarPanel.GetComponent<QuickslotInventory>().currentQuickslotID).GetComponent<InventorySlot>(); // Компонент слота в хотбаре
 
-                if (field != null) // Проверка на попадения луа в грядку
+                if (field != null) // Проверка на попадения луча в грядку
                 {
                     if (field.FieldIsEmpty == true) // Проверка грядки на её незасеянность
                     {
