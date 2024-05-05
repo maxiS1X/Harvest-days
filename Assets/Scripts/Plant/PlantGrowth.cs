@@ -10,11 +10,11 @@ public class PlantGrowth : MonoBehaviour
         transform.localScale = Vector3.zero;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (transform.lossyScale.x < maxSize)
         {
-            transform.localScale += Vector3.one * Time.deltaTime * speed;
+            transform.localScale += Vector3.one * Time.fixedDeltaTime * speed;
         }
     }
 }
