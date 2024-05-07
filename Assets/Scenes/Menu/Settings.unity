@@ -590,6 +590,8 @@ GameObject:
   m_Component:
   - component: {fileID: 773803399}
   - component: {fileID: 773803400}
+  - component: {fileID: 773803402}
+  - component: {fileID: 773803401}
   m_Layer: 0
   m_Name: MenuController
   m_TagString: Untagged
@@ -624,6 +626,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a50e76791f017439422b735a2b0c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &773803401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773803398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 381f36df494ae764c9ddf60336e2adc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Listener: {fileID: 1214968836}
+--- !u!114 &773803402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773803398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9e96dc1b409ba4da4ea185ec2f715a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 1460469734}
+  oldVolume: 1
 --- !u!1 &838080884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,10 +1707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9e96dc1b409ba4da4ea185ec2f715a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundOnSprite: {fileID: 21300000, guid: d87135176741d1746a6c096980638fd2, type: 3}
-  _soundOffSprite: {fileID: 21300000, guid: a5547fe3247ec9c4eb0705038d970398, type: 3}
   _slider: {fileID: 1460469734}
-  _soundButton: {fileID: 0}
+  oldVolume: 0
 --- !u!1 &2109261545
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,42 +3,30 @@ using UnityEngine.UI;
 
 public class SoundToggle : MonoBehaviour
 {
-    [SerializeField] Sprite _soundOnSprite;
-    [SerializeField] Sprite _soundOffSprite;
     [SerializeField] Slider _slider;
-    [SerializeField] Button _soundButton;
-    public float _volume;
+    public float oldVolume;
 
-    private void Update()
+    private void Start()
     {
-        AudioListener.volume = _slider.value;
-        _volume = AudioListener.volume;
-    }
-    public void SoundToggleButton()
-    {
-        if (AudioListener.volume == 0)
+        if (!PlayerPrefs.HasKey("volume"))
         {
-            AudioListener.volume = 1;
-            _soundButton.image.sprite = _soundOnSprite;
+            _slider.value = 1.0f;
         }
         else
         {
-            AudioListener.volume = 0;
-            _soundButton.image.sprite = _soundOffSprite;
+            _slider.value = PlayerPrefs.GetFloat("volume");
+        }
+        oldVolume = _slider.value;
+    }
+    private void Update()
+    {
+        if(oldVolume != _slider.value)
+        {
+            PlayerPrefs.SetFloat("volume", _slider.value);
+            PlayerPrefs.Save();
+            oldVolume = _slider.value;
         }
     }
-
-    ///private void OnDestroy()
-    //{
-        //GlobalVolume.volume = _volume;
-    //}
-
-    //private void OnEnable()
-    //{
-        //if (GlobalVolume.volume != 0)
-        //{
-           // _volume = GlobalVolume.volume;
-       // }
-    //}
+   
 
 }
