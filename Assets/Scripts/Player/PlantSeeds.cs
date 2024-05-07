@@ -24,15 +24,15 @@ public class PlantSeeds : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Mouse1)) // При нажатии на RMB садится растение
             {
-                Plant(hit);
+                Planting(hit);
             }
-            if (Input.GetKey(KeyCode.Mouse0)) // При нажатии на LMB садится растение
+            if (Input.GetKey(KeyCode.Mouse0)) // При нажатии на LMB собирается растение
             {
-                Collect(hit);
+                Collecting(hit);
             }
         }
     }
-    private void Plant(RaycastHit hit)
+    private void Planting(RaycastHit hit)
     {
         var field = hit.collider.gameObject.GetComponent<Field>(); // Компонент из объекта грядки
         var hotbarSlot = hotbarPanel.transform.GetChild(hotbarPanel.GetComponent<QuickslotInventory>().currentQuickslotID).GetComponent<InventorySlot>(); // Компонент слота в хотбаре
@@ -48,6 +48,7 @@ public class PlantSeeds : MonoBehaviour
                     Instantiate(field.cropsPrefabs[0], hit.collider.gameObject.transform); // Спавним префаб лежащий в скрипте грядки прямо в грядке
 
                     field.FieldIsEmpty = false; // Теперь грядка не пуста
+                    field.GetCrop(0);
 
                     AmountUpdate();
                     break;
@@ -56,6 +57,7 @@ public class PlantSeeds : MonoBehaviour
                     Instantiate(field.cropsPrefabs[1], hit.collider.gameObject.transform);
 
                     field.FieldIsEmpty = false;
+                    field.GetCrop(1);
 
                     AmountUpdate();
                     break;
@@ -74,13 +76,25 @@ public class PlantSeeds : MonoBehaviour
             }
         }
     }
-    private void Collect(RaycastHit hit)
+    private void Collecting(RaycastHit hit)
     {
         var plant = hit.collider.gameObject.GetComponent<PlantGrowth>();
-        if (hit.collider.gameObject.GetComponent<PlantGrowth>() != null)
+
+        if (plant != null && plant.plantRipe == true)
         {
-            if (hit.collider.gameObject.GetComponent<PlantGrowth>().plantRipe == true)
+            int cropID = hit.collider.gameObject.GetComponentInParent<Field>().crop;
+            switch (cropID)
             {
+                case 0:
+                    Instantiate(plant.cropsItemPrefabs[0], hit.collider.gameObject.transform.position, Quaternion.identity);
+                    hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
+                    Destroy(plant.gameObject);
+                    break;
+
+                case 1:
+                    Instantiate(plant.cropsItemPrefabs[1], hit.collider.gameObject.transform);
+                    hit.collider.gameObject.GetComponent<Field>().FieldIsEmpty = true;
+                    break;
 
             }
         }
