@@ -20,7 +20,11 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     {
         // Если слот пустой, то мы не выполняем то что ниже return;
         if (oldSlot.isEmpty)
+        {
+            Debug.Log("Why?");
             return;
+        }
+        Debug.Log("Why not?");
         GetComponent<RectTransform>().position += new Vector3(eventData.delta.x, eventData.delta.y);
     }
 
@@ -58,12 +62,12 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
             // убираем значения InventorySlot
             NullifySlotData();
         }
-        else if(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>() != null)
+        else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>() != null)
         {
             //Перемещаем данные из одного слота в другой
             ExchangeSlotData(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>());
         }
-       
+
     }
     public void NullifySlotData()
     {
@@ -98,7 +102,7 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
             newSlot.itemIcon.GetComponent<Image>().sprite = null;
             newSlot.itemAmountText.text = "";
         }
-        
+
         newSlot.isEmpty = oldSlot.isEmpty;
 
         // Заменяем значения oldSlot на значения newSlot сохраненные в переменных
@@ -115,7 +119,7 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
             oldSlot.itemIcon.GetComponent<Image>().sprite = null;
             oldSlot.itemAmountText.text = "";
         }
-        
+
         oldSlot.isEmpty = isEmpty;
     }
 }
