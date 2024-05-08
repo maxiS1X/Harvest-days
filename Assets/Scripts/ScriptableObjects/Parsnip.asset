@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66781c81c38169a4d8e372dc5d4f6dbd, type: 3}
-  m_Name: Carrot Seeds
+  m_Name: Parsnip
   m_EditorClassIdentifier: 
-  type: 1
-  itemPrefab: {fileID: 6628777958328256804, guid: 5a0a9efbdf707894586fd5656d24f887, type: 3}
-  itemSprite: {fileID: 21300000, guid: 429af6680843fcc4281a52bfab62dd4a, type: 3}
-  itemName: Carrot Seeds
-  itemDescription: High-quality carrot seeds for a bountiful harvest of sweet and
-    crunchy carrots
+  itemPrefab: {fileID: 0}
+  itemSprite: {fileID: 0}
+  itemName: Parsnip
+  itemDescription: 
   maxAmount: 30

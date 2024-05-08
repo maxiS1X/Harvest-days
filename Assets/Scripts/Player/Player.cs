@@ -62,6 +62,6 @@ public class Player : MonoBehaviour
 
     private void Sit(bool canSit)
     {
-        _characterController.height = canSit ? 1f : 2f;
+        _characterController.height = canSit ? 0.5f : 1f;
     }
 }

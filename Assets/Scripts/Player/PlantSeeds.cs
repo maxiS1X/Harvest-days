@@ -44,7 +44,7 @@ public class PlantSeeds : MonoBehaviour
 
             switch (nameSeeds) // Сверяем название Item с доступными Item для взаимодействия
             {
-                case "Carrot Seeds": // Если в слоте хотбара есть объект с именем Carrot Seeds, то...
+                case "Corn Seeds": // Если в слоте хотбара есть объект с именем Carrot Seeds, то...
                     Instantiate(field.cropsPrefabs[0], hit.collider.gameObject.transform); // Спавним префаб лежащий в скрипте грядки прямо в грядке
 
                     field.FieldIsEmpty = false; // Теперь грядка не пуста
@@ -53,11 +53,20 @@ public class PlantSeeds : MonoBehaviour
                     AmountUpdate();
                     break;
 
-                case "Potato seeds": // Сдесь аналогично
+                case "Parsnip Seeds": // Сдесь аналогично
                     Instantiate(field.cropsPrefabs[1], hit.collider.gameObject.transform);
 
                     field.FieldIsEmpty = false;
                     field.GetCrop(1);
+
+                    AmountUpdate();
+                    break;
+
+                case "Beet Seeds": // Сдесь аналогично
+                    Instantiate(field.cropsPrefabs[2], hit.collider.gameObject.transform);
+
+                    field.FieldIsEmpty = false;
+                    field.GetCrop(2);
 
                     AmountUpdate();
                     break;

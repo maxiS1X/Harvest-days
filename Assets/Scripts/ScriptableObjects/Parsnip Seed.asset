@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66781c81c38169a4d8e372dc5d4f6dbd, type: 3}
-  m_Name: Carrot
+  m_Name: Parsnip Seed
   m_EditorClassIdentifier: 
-  type: 0
-  itemPrefab: {fileID: 919132149155446097, guid: 9a68a9e6b13a9ca4ab82f9929e17f9c5, type: 3}
-  itemSprite: {fileID: 0}
-  itemName: Carrot
-  itemDescription: Carrot
+  itemPrefab: {fileID: 6628777958328256804, guid: 74541c030608a174981f1920c8f15580, type: 3}
+  itemSprite: {fileID: 21300000, guid: 5e8abaca4a0c38f42ba69ba677a1379f, type: 3}
+  itemName: Parsnip
+  itemDescription: 
   maxAmount: 30

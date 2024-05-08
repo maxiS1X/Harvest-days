@@ -6,6 +6,7 @@ public class Plant : MonoBehaviour
 {
     public List<GameObject> cropsItemPrefabs = new List<GameObject>();
     public bool plantRipe = false;
+    public int crop;
     [SerializeField] private float _ripeTime = 5f;
     [SerializeField] private GameObject _smallPlant;
     [SerializeField] private GameObject _mediumPlant;
@@ -44,5 +45,9 @@ public class Plant : MonoBehaviour
         //    Instantiate(_fruitPrefab, spawnPosition, Random.rotation);
         //}
         //Destroy(gameObject);
+    }
+    public void GetCrop(int cropID)
+    {
+        crop = cropID;
     }
 }
