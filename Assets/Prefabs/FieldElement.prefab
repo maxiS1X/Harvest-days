@@ -71,6 +71,7 @@ MonoBehaviour:
   cropsPrefabs:
   - {fileID: 5168307307902433672, guid: 9f7eafed31496fd44ac5dc8f80ac313b, type: 3}
   - {fileID: 1123012446438852947, guid: 107bd32cd6f7f444aa14df804bf2cd8a, type: 3}
+  - {fileID: 1123012446438852947, guid: 965b5fd81aa8e20469da3604e0392c39, type: 3}
   crop: 0
 --- !u!1001 &1040329349600805230
 PrefabInstance:

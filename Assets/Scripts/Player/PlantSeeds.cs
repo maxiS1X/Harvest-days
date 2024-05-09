@@ -106,6 +106,12 @@ public class PlantSeeds : MonoBehaviour
                     Destroy(plant.gameObject);
                     break;
 
+                case 2:
+                    Instantiate(plant.cropsItemPrefabs[2], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), plant.cropsItemPrefabs[2].transform.rotation);
+                    hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
+                    Destroy(plant.gameObject);
+                    break;
+
             }
         }
     }
