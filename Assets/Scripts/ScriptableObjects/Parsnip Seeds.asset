@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66781c81c38169a4d8e372dc5d4f6dbd, type: 3}
-  m_Name: Parsnip Seed
+  m_Name: Parsnip Seeds
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 6628777958328256804, guid: 74541c030608a174981f1920c8f15580, type: 3}
   itemSprite: {fileID: 21300000, guid: 5e8abaca4a0c38f42ba69ba677a1379f, type: 3}

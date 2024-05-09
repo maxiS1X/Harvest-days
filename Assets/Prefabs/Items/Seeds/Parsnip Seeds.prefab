@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5943491750113738243}
   - component: {fileID: 5713787863422115593}
   - component: {fileID: 9183199046128775531}
-  - component: {fileID: -4336057313048152174}
   m_Layer: 0
   m_Name: Parsnip Seeds
   m_TagString: Untagged
@@ -149,24 +148,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: c3e13200cc015cf41a88fb9b6089991f, type: 2}
   amount: 15
---- !u!114 &-4336057313048152174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6628777958328256804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6000716bdbc82446aca014d54abb1be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropsItemPrefabs: []
-  plantRipe: 0
-  crop: 0
-  _ripeTime: 5
-  _smallPlant: {fileID: 0}
-  _mediumPlant: {fileID: 0}
-  _bigPlant: {fileID: 0}
-  _readyPlant: {fileID: 0}
-  _fruitPrefab: {fileID: 0}

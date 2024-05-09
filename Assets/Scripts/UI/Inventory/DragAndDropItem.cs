@@ -56,7 +56,7 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         if (eventData.pointerCurrentRaycast.gameObject.name == "InventoryBackground")
         {
             // Выброс объектов из инвентаря - Спавним префаб обекта перед персонажем
-            GameObject itemObject = Instantiate(oldSlot.item.itemPrefab, player.position + Vector3.up + player.forward, Quaternion.identity);
+            GameObject itemObject = Instantiate(oldSlot.item.itemPrefab, player.position + Vector3.up + player.forward, oldSlot.item.itemPrefab.transform.rotation);
             // Устанавливаем количество объектов такое какое было в слоте
             itemObject.GetComponent<Item>().amount = oldSlot.amount;
             // убираем значения InventorySlot

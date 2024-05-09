@@ -87,7 +87,7 @@ public class PlantSeeds : MonoBehaviour
     }
     private void Collecting(RaycastHit hit)
     {
-        var plant = hit.collider.gameObject.GetComponent<Plant>();
+        var plant = hit.collider.gameObject.GetComponent<PlantGrowth>();
 
         if (plant != null && plant.plantRipe == true)
         {
@@ -95,14 +95,15 @@ public class PlantSeeds : MonoBehaviour
             switch (cropID)
             {
                 case 0:
-                    Instantiate(plant.cropsItemPrefabs[0], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                    Instantiate(plant.cropsItemPrefabs[0], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), plant.cropsItemPrefabs[0].transform.rotation);
                     hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
                     Destroy(plant.gameObject);
                     break;
 
                 case 1:
-                    Instantiate(plant.cropsItemPrefabs[1], hit.collider.gameObject.transform.position, Quaternion.identity);
-                    hit.collider.gameObject.GetComponent<Field>().FieldIsEmpty = true;
+                    Instantiate(plant.cropsItemPrefabs[1], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), plant.cropsItemPrefabs[1].transform.rotation);
+                    hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
+                    Destroy(plant.gameObject);
                     break;
 
             }

@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
-    public List<GameObject> cropsItemPrefabs = new List<GameObject>();
-    public bool plantRipe = false;
-    public int crop;
+    //public List<GameObject> cropsItemPrefabs = new List<GameObject>();
+    //public bool plantRipe = false;
+    //public int crop;
     [SerializeField] private float _ripeTime = 5f;
     [SerializeField] private GameObject _smallPlant;
     [SerializeField] private GameObject _mediumPlant;
     [SerializeField] private GameObject _bigPlant;
     [SerializeField] private GameObject _readyPlant;
-    [SerializeField] private GameObject _fruitPrefab;
 
     void Start()
     {
@@ -34,7 +33,8 @@ public class Plant : MonoBehaviour
         yield return wait;
         _bigPlant.SetActive(false);
         _readyPlant.SetActive(true);
-        plantRipe = true;
+
+        GetComponentInParent<PlantGrowth>().plantRipe = true;
 
         //yield return wait;
         //_readyPlant.SetActive(false);
@@ -46,8 +46,5 @@ public class Plant : MonoBehaviour
         //}
         //Destroy(gameObject);
     }
-    public void GetCrop(int cropID)
-    {
-        crop = cropID;
-    }
+    
 }
