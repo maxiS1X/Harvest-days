@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class MenuPaused : MonoBehaviour
 {
     public GameObject menuPaused;
@@ -18,7 +17,7 @@ public class MenuPaused : MonoBehaviour
         ActiveMenu();
     }
 
-    private void ActiveMenu()
+    public void ActiveMenu()
     {
         if (Input.GetKeyDown(keyMenuPaused))
         {
@@ -29,12 +28,12 @@ public class MenuPaused : MonoBehaviour
         {
             menuPaused.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true; 
             Time.timeScale = 0f;
         }
         else
         {
             menuPaused.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1f;
         }
     }
