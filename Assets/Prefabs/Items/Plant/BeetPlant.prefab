@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 247572436573612642}
   - component: {fileID: 218776983854195460}
   - component: {fileID: 228516074334804518}
+  - component: {fileID: 188559503347446116}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -83,6 +84,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &188559503347446116
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250922970742474960}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &260156128844073242
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +277,7 @@ GameObject:
   - component: {fileID: 555885436456943041}
   - component: {fileID: 562997832682370215}
   - component: {fileID: 572714864796011909}
+  - component: {fileID: 451642907015620295}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -325,6 +350,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &451642907015620295
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550035188573708147}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &553175400046997983
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +384,7 @@ GameObject:
   - component: {fileID: 556685853032420205}
   - component: {fileID: 567299094431095307}
   - component: {fileID: 575872702954283817}
+  - component: {fileID: 453692420133095531}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -408,6 +457,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &453692420133095531
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553175400046997983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &560815601484637650
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +491,7 @@ GameObject:
   - component: {fileID: 566488304209332064}
   - component: {fileID: 556862285168201222}
   - component: {fileID: 547404942396831524}
+  - component: {fileID: 445568373605407846}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -491,6 +564,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &445568373605407846
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560815601484637650}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &853355142679305697
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +598,7 @@ GameObject:
   - component: {fileID: 847592855757504339}
   - component: {fileID: 839231275760449077}
   - component: {fileID: 830657735786827543}
+  - component: {fileID: 734413540701250645}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -574,6 +671,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &734413540701250645
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853355142679305697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1040930679172377731
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +705,7 @@ GameObject:
   - component: {fileID: 1037754520875208241}
   - component: {fileID: 1008829875389089623}
   - component: {fileID: 1018534539372674677}
+  - component: {fileID: 1122715937107809591}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -657,6 +778,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1122715937107809591
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040930679172377731}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1123012446438852947
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +812,7 @@ GameObject:
   - component: {fileID: 220661317861999596}
   - component: {fileID: 580014533067320934}
   - component: {fileID: 7848546792368473899}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: BeetPlant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +864,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -755,6 +899,7 @@ GameObject:
   - component: {fileID: 1138974158692967491}
   - component: {fileID: 1128362427628563749}
   - component: {fileID: 1119748204098409479}
+  - component: {fileID: 1025724472740020037}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -827,6 +972,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1025724472740020037
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142377443412985585}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1202856054228318340
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +1006,7 @@ GameObject:
   - component: {fileID: 1199540764859062838}
   - component: {fileID: 1207900008360874832}
   - component: {fileID: 1216473281810590322}
+  - component: {fileID: 1249740062203035952}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -910,6 +1079,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1249740062203035952
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202856054228318340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1211498866963838725
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +1166,7 @@ GameObject:
   - component: {fileID: 1557644658315964558}
   - component: {fileID: 1583878112192100840}
   - component: {fileID: 1574441728572752074}
+  - component: {fileID: 1472595298401168264}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -1046,6 +1239,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1472595298401168264
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551812629746913852}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1627575541128372281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1273,7 @@ GameObject:
   - component: {fileID: 1622060687274574475}
   - component: {fileID: 1649578371135065069}
   - component: {fileID: 1641245820151149263}
+  - component: {fileID: 1689095698135980429}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -1129,6 +1346,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1689095698135980429
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627575541128372281}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1799080390848455426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1380,7 @@ GameObject:
   - component: {fileID: 1793390156298191280}
   - component: {fileID: 1767007030966143190}
   - component: {fileID: 1776442595954831860}
+  - component: {fileID: 1806241242736990902}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -1212,6 +1453,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1806241242736990902
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799080390848455426}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &1874124232419736026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1593,7 @@ GameObject:
   - component: {fileID: 2051161465081340180}
   - component: {fileID: 2022676073399478386}
   - component: {fileID: 2032081679030423888}
+  - component: {fileID: 2127203651776494098}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -1401,6 +1666,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2127203651776494098
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045699319030743974}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &2187712654089189022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1700,7 @@ GameObject:
   - component: {fileID: 2182180783608714284}
   - component: {fileID: 2174786224120831306}
   - component: {fileID: 2165384955804968040}
+  - component: {fileID: 2286352873371979562}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -1484,6 +1773,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2286352873371979562
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2187712654089189022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &2400569647172463830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1913,7 @@ GameObject:
   - component: {fileID: 2618997989531814766}
   - component: {fileID: 2611596970381099528}
   - component: {fileID: 2602195695990815530}
+  - component: {fileID: 2714233259862528104}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -1673,6 +1986,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2714233259862528104
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615593055577909724}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &2736473484091147371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +2020,7 @@ GameObject:
   - component: {fileID: 2732859170514921177}
   - component: {fileID: 2705499816162045887}
   - component: {fileID: 2713778413530863261}
+  - component: {fileID: 2602932016963681759}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -1756,6 +2093,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2602932016963681759
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736473484091147371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &2961343370273615265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,6 +2127,7 @@ GameObject:
   - component: {fileID: 2957799356351074067}
   - component: {fileID: 2984474263641359989}
   - component: {fileID: 2974734406729334615}
+  - component: {fileID: 2953902690528580629}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -1839,6 +2200,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2953902690528580629
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961343370273615265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &2965096850872271069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +2234,7 @@ GameObject:
   - component: {fileID: 2968676091850236527}
   - component: {fileID: 2978029981711559433}
   - component: {fileID: 2987730245739156011}
+  - component: {fileID: 2936543915819678057}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -1922,6 +2307,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2936543915819678057
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965096850872271069}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &3143104709338412193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +2394,7 @@ GameObject:
   - component: {fileID: 3272875063550155108}
   - component: {fileID: 3246351887807074306}
   - component: {fileID: 3256033805931161888}
+  - component: {fileID: 3213879673185206882}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -2058,6 +2467,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3213879673185206882
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278460320776371158}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &3433032503377009291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2501,7 @@ GameObject:
   - component: {fileID: 3436365342280693817}
   - component: {fileID: 3447119870923534687}
   - component: {fileID: 3455452694990162045}
+  - component: {fileID: 3333231197667140415}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -2141,6 +2574,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3333231197667140415
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3433032503377009291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &3701220330493745789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2661,7 @@ GameObject:
   - component: {fileID: 3831963918186596160}
   - component: {fileID: 3840184761182883366}
   - component: {fileID: 3848758096657970948}
+  - component: {fileID: 3809964946545564742}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -2277,6 +2734,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3809964946545564742
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3835138530461541874}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &3873377514143629132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2821,7 @@ GameObject:
   - component: {fileID: 4022872352165453884}
   - component: {fileID: 4013499221872421210}
   - component: {fileID: 4003782456835264632}
+  - component: {fileID: 3901934874673969978}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -2413,6 +2894,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3901934874673969978
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017463592562279054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4069797512169269671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,6 +2928,7 @@ GameObject:
   - component: {fileID: 4066235390765075221}
   - component: {fileID: 4037730896124592755}
   - component: {fileID: 4047184044913867601}
+  - component: {fileID: 4151267190970322963}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -2496,6 +3001,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4151267190970322963
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069797512169269671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4149010767220253856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +3035,7 @@ GameObject:
   - component: {fileID: 4143531020460590610}
   - component: {fileID: 4172034003136761716}
   - component: {fileID: 4162610813825791574}
+  - component: {fileID: 4067506434474253588}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -2579,6 +3108,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4067506434474253588
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4149010767220253856}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4155137715282319391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +3142,7 @@ GameObject:
   - component: {fileID: 4161039571490552493}
   - component: {fileID: 4168140972750107595}
   - component: {fileID: 4177841308164754153}
+  - component: {fileID: 4056779537908769195}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -2662,6 +3215,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4056779537908769195
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155137715282319391}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4194132983247818947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,6 +3249,7 @@ GameObject:
   - component: {fileID: 4188476807484207729}
   - component: {fileID: 4199246181043419927}
   - component: {fileID: 4207525946931692085}
+  - component: {fileID: 4310540195891472759}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -2745,6 +3322,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4310540195891472759
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4194132983247818947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4232414873211830691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,6 +3356,7 @@ GameObject:
   - component: {fileID: 4226758173734576913}
   - component: {fileID: 4237530432555543159}
   - component: {fileID: 4245805740016079701}
+  - component: {fileID: 4276763942061357079}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -2828,6 +3429,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4276763942061357079
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232414873211830691}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4232622459219578824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,6 +3570,7 @@ GameObject:
   - component: {fileID: 4345369631664956750}
   - component: {fileID: 4335585422150478888}
   - component: {fileID: 4326144296890422538}
+  - component: {fileID: 4449471387379269192}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -3018,6 +3643,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4449471387379269192
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348544733633202172}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4684076919402135235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3029,6 +3677,7 @@ GameObject:
   - component: {fileID: 4689891983150505073}
   - component: {fileID: 4716142617449960727}
   - component: {fileID: 4706683893744921653}
+  - component: {fileID: 4676917733962205047}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -3101,6 +3750,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4676917733962205047
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4684076919402135235}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4699971506893275150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,6 +3837,7 @@ GameObject:
   - component: {fileID: 4826674996043934436}
   - component: {fileID: 4799999401709380482}
   - component: {fileID: 4809735204222655136}
+  - component: {fileID: 4830571679109149154}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -3237,6 +3910,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &4830571679109149154
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823130466788296790}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4903291613916827200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,6 +3944,7 @@ GameObject:
   - component: {fileID: 4908648112326225138}
   - component: {fileID: 4934194920535909780}
   - component: {fileID: 4925621370530569398}
+  - component: {fileID: 5038803938459072500}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -3320,6 +4017,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5038803938459072500
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903291613916827200}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4913363539405477446
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,6 +4051,7 @@ GameObject:
   - component: {fileID: 4916592508821845236}
   - component: {fileID: 4926361325810023826}
   - component: {fileID: 4935779367335265456}
+  - component: {fileID: 5028645949539725298}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -3403,6 +4124,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5028645949539725298
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4913363539405477446}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &5295643653353979253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,6 +4211,7 @@ GameObject:
   - component: {fileID: 5407889424226868790}
   - component: {fileID: 5434265401744594768}
   - component: {fileID: 5424859796349578866}
+  - component: {fileID: 5403975166152394032}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -3539,6 +4284,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5403975166152394032
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411169555258080388}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &5913286260969011965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,6 +4318,7 @@ GameObject:
   - component: {fileID: 5910075433800685647}
   - component: {fileID: 5936310675457380649}
   - component: {fileID: 5926906100030334987}
+  - component: {fileID: 6050205960429519689}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -3622,6 +4391,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6050205960429519689
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913286260969011965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6070424695114928917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +4425,7 @@ GameObject:
   - component: {fileID: 6064804795018326439}
   - component: {fileID: 6074316327242954945}
   - component: {fileID: 6084033437993501155}
+  - component: {fileID: 6185953415182330529}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -3705,6 +4498,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6185953415182330529
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6070424695114928917}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6120777498897588515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +4532,7 @@ GameObject:
   - component: {fileID: 6117478710456877969}
   - component: {fileID: 6089828947191712503}
   - component: {fileID: 6098420906249991125}
+  - component: {fileID: 6131596428115810455}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -3788,6 +4605,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6131596428115810455
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120777498897588515}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6317532876856540728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +4639,7 @@ GameObject:
   - component: {fileID: 6320971827255450762}
   - component: {fileID: 6331594003680384492}
   - component: {fileID: 6340168438362975438}
+  - component: {fileID: 6218048782365984652}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -3871,6 +4712,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6218048782365984652
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317532876856540728}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6374609426052123735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,6 +4746,7 @@ GameObject:
   - component: {fileID: 6369164863662665445}
   - component: {fileID: 6342507409542473603}
   - component: {fileID: 6352193459609640609}
+  - component: {fileID: 6454143966503417315}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -3954,6 +4819,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6454143966503417315
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374609426052123735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6583511406526462271
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,6 +4853,7 @@ GameObject:
   - component: {fileID: 6577978341806005133}
   - component: {fileID: 6570577186288538347}
   - component: {fileID: 6561176803037932489}
+  - component: {fileID: 6538035321075318923}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -4037,6 +4926,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6538035321075318923
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6583511406526462271}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6668431690132427233
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,6 +4960,7 @@ GameObject:
   - component: {fileID: 6674334130630538067}
   - component: {fileID: 6699441822608095797}
   - component: {fileID: 6691126934642557719}
+  - component: {fileID: 6732203631888967765}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -4120,6 +5033,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6732203631888967765
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6668431690132427233}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6721584293824419894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,6 +5067,7 @@ GameObject:
   - component: {fileID: 6724759902596463236}
   - component: {fileID: 6716530402556752866}
   - component: {fileID: 6707956037835147968}
+  - component: {fileID: 6674701402539090306}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -4203,6 +5140,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6674701402539090306
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721584293824419894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6730492079613341194
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,6 +5174,7 @@ GameObject:
   - component: {fileID: 6733860206035094712}
   - component: {fileID: 6707468972877448670}
   - component: {fileID: 6716887772395273468}
+  - component: {fileID: 6665628857534896062}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -4286,6 +5247,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6665628857534896062
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6730492079613341194}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6777938830355686148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,6 +5281,7 @@ GameObject:
   - component: {fileID: 6774798921683157430}
   - component: {fileID: 6801041172573915344}
   - component: {fileID: 6791635224922649074}
+  - component: {fileID: 6914859098898324144}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -4369,6 +5354,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6914859098898324144
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6777938830355686148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6857738934484370869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4433,6 +5441,7 @@ GameObject:
   - component: {fileID: 6932599661074034833}
   - component: {fileID: 6940970587590457847}
   - component: {fileID: 6949579036320006357}
+  - component: {fileID: 7045849344677129111}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -4505,6 +5514,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7045849344677129111
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926943476827099683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &6999844482348707967
 GameObject:
   m_ObjectHideFlags: 0
@@ -4569,6 +5601,7 @@ GameObject:
   - component: {fileID: 7006817980204572380}
   - component: {fileID: 7015476291522860986}
   - component: {fileID: 7023750840888159896}
+  - component: {fileID: 6975899742052042202}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -4641,6 +5674,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6975899742052042202
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7001354803093404782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &7386229238722280185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,6 +5815,7 @@ GameObject:
   - component: {fileID: 7405082993504282080}
   - component: {fileID: 7395736250601647238}
   - component: {fileID: 7386031236609693092}
+  - component: {fileID: 7437215058132893414}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -4831,6 +5888,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7437215058132893414
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408662672837265234}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &7421086921530766986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,6 +5922,7 @@ GameObject:
   - component: {fileID: 7415185520383349816}
   - component: {fileID: 7390066834413526366}
   - component: {fileID: 7398376287045510268}
+  - component: {fileID: 7429373675439673150}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -4914,6 +5995,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7429373675439673150
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421086921530766986}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &7489038031889298230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4925,6 +6029,7 @@ GameObject:
   - component: {fileID: 7492459965661335940}
   - component: {fileID: 7465945586682337506}
   - component: {fileID: 7475631634616738240}
+  - component: {fileID: 7352399805294692994}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -4997,6 +6102,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7352399805294692994
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489038031889298230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &7596396164866800179
 GameObject:
   m_ObjectHideFlags: 0
@@ -5115,6 +6243,7 @@ GameObject:
   - component: {fileID: 7744681571647432651}
   - component: {fileID: 7718166504415686317}
   - component: {fileID: 7727883538445080463}
+  - component: {fileID: 7676608578658417869}
   m_Layer: 0
   m_Name: MediumBeet
   m_TagString: Untagged
@@ -5187,6 +6316,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7676608578658417869
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741223860900300153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &7829423599927790492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,6 +6350,7 @@ GameObject:
   - component: {fileID: 7832687212586281262}
   - component: {fileID: 7842322575714672712}
   - component: {fileID: 7851775795602626922}
+  - component: {fileID: 7872612701193286184}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -5270,6 +6423,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7872612701193286184
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7829423599927790492}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &7908043002007314429
 GameObject:
   m_ObjectHideFlags: 0
@@ -5281,6 +6457,7 @@ GameObject:
   - component: {fileID: 7902687027548290383}
   - component: {fileID: 7912040228655117353}
   - component: {fileID: 7921739395601714443}
+  - component: {fileID: 7807434107120772681}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -5353,6 +6530,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7807434107120772681
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7908043002007314429}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8367014274428224237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,6 +6564,7 @@ GameObject:
   - component: {fileID: 8361324048232767583}
   - component: {fileID: 8390116752340855097}
   - component: {fileID: 8380411736151085083}
+  - component: {fileID: 8501401798575258457}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -5436,6 +6637,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8501401798575258457
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367014274428224237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8367579498286943014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5447,6 +6671,7 @@ GameObject:
   - component: {fileID: 8361889237729978772}
   - component: {fileID: 8389547108952334578}
   - component: {fileID: 8380972458883815888}
+  - component: {fileID: 8500841139705164434}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -5519,6 +6744,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8500841139705164434
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367579498286943014}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8456751355331079417
 GameObject:
   m_ObjectHideFlags: 0
@@ -5530,6 +6778,7 @@ GameObject:
   - component: {fileID: 8451165505468583499}
   - component: {fileID: 8443790875685914413}
   - component: {fileID: 8434333601279639055}
+  - component: {fileID: 8411310471433737549}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -5602,6 +6851,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8411310471433737549
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456751355331079417}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8527489614204537396
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,6 +6885,7 @@ GameObject:
   - component: {fileID: 8521727842743756934}
   - component: {fileID: 8513367912029938144}
   - component: {fileID: 8504790248806979778}
+  - component: {fileID: 8624721344093074304}
   m_Layer: 0
   m_Name: BigBeet
   m_TagString: Untagged
@@ -5685,6 +6958,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8624721344093074304
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527489614204537396}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8699556978411205758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5696,6 +6992,7 @@ GameObject:
   - component: {fileID: 8696433527749269196}
   - component: {fileID: 8703555271618076586}
   - component: {fileID: 8713242410175325832}
+  - component: {fileID: 8745313419997171146}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -5768,6 +7065,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8745313419997171146
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8699556978411205758}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8907598914351190567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5779,6 +7099,7 @@ GameObject:
   - component: {fileID: 8902172571151921301}
   - component: {fileID: 8929533711656991219}
   - component: {fileID: 8921218754451914961}
+  - component: {fileID: 8825004435153742739}
   m_Layer: 0
   m_Name: SmallBeet
   m_TagString: Untagged
@@ -5851,6 +7172,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8825004435153742739
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8907598914351190567}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &8974249101385460723
 GameObject:
   m_ObjectHideFlags: 0
@@ -5862,6 +7206,7 @@ GameObject:
   - component: {fileID: 8979624394838001985}
   - component: {fileID: 9005164744491696167}
   - component: {fileID: 8996607895199348997}
+  - component: {fileID: 9037704933547823687}
   m_Layer: 0
   m_Name: ReadyBeet
   m_TagString: Untagged
@@ -5934,3 +7279,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &9037704933547823687
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974249101385460723}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}

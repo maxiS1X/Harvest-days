@@ -7,19 +7,18 @@ using UnityEngine.UI;
 public class QuickslotInventory : MonoBehaviour
 {
     // Объект у которого дети являются слотами
-    [SerializeField] private Transform quickslotParent;
-    [SerializeField] private InventoryManager inventoryManager;
+    public Transform quickslotParent;
+    public InventoryManager inventoryManager;
     public int currentQuickslotID = 0;
-    [SerializeField] private Sprite selectedSprite;
-    [SerializeField] private Sprite notSelectedSprite;
-    [SerializeField] private MenuPaused _menuManager;
+    public Sprite selectedSprite;
+    public Sprite notSelectedSprite;
 
     // Update is called once per frame
     void Update()
     {
         float mw = Input.GetAxis("Mouse ScrollWheel");
         // Используем колесико мышки
-        if (mw < 0.1 && _menuManager.isMenuPaused == false)
+        if (mw < 0.1)
         {
             // Берем предыдущий слот и меняем его картинку на обычную
             quickslotParent.GetChild(currentQuickslotID).GetComponent<Image>().sprite = notSelectedSprite;
@@ -38,7 +37,7 @@ public class QuickslotInventory : MonoBehaviour
             // Что то делаем с предметом:
 
         }
-        if (mw > -0.1 && _menuManager.isMenuPaused == false)
+        if (mw > -0.1)
         {
             // Берем предыдущий слот и меняем его картинку на обычную
             quickslotParent.GetChild(currentQuickslotID).GetComponent<Image>().sprite = notSelectedSprite;
@@ -61,7 +60,7 @@ public class QuickslotInventory : MonoBehaviour
         for(int i = 0; i < quickslotParent.childCount; i++)
         {
             // если мы нажимаем на клавиши 1 по 5 то...
-            if (Input.GetKeyDown((i + 1).ToString()) && _menuManager.isMenuPaused == false) {
+            if (Input.GetKeyDown((i + 1).ToString())) {
                 // проверяем если наш выбранный слот равен слоту который у нас уже выбран, то
                 if (currentQuickslotID == i)
                 {
