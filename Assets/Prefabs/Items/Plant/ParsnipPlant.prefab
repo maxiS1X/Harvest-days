@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 220661317861999596}
   - component: {fileID: 580014533067320934}
   - component: {fileID: 7848546792368473899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ParsnipPlant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -1,27 +1,30 @@
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public Transform InventoryPanel;
-    public Transform HotbarPanel;
+    [SerializeField] private Transform _inventoryPanel;
+    [SerializeField] private Transform _hotbarPanel;
+    [SerializeField] private GameObject _inventoryBackground;
+    [SerializeField] private float _reachDistance = 3f; // Дистанция с которой можно поднять предмет
+    [SerializeField] private MenuPaused _menuManager;
     public List<InventorySlot> slots = new List<InventorySlot>(); // Создание списка слотов
-    private Camera mainCamera;
-    public GameObject InventoryBackground;
+    private Camera _mainCamera;
     public bool isOpened;
-    public float reachDistance = 3f; // Дистанция с которой можно поднять предмет
+    
 
     private void Start()
     {
-        InventoryBackground.SetActive(false);
-        InventoryPanel.gameObject.SetActive(false);
+        _inventoryBackground.SetActive(false);
+        _inventoryPanel.gameObject.SetActive(false);
 
         CameraSearch();
         ListFilling();
     }
     private void CameraSearch()
     {
-        mainCamera = Camera.main; // Поиск каммеры на сцене
+        _mainCamera = Camera.main; // Поиск каммеры на сцене
     }
     private void Update()
     {
@@ -31,39 +34,39 @@ public class InventoryManager : MonoBehaviour
     private void ListFilling()
     {
         // Заполнение списка
-        for (int i = 0; i < InventoryPanel.childCount; i++)
+        for (int i = 0; i < _inventoryPanel.childCount; i++)
         {
-            if (InventoryPanel.GetChild(i).GetComponent<InventorySlot>() != null)
+            if (_inventoryPanel.GetChild(i).GetComponent<InventorySlot>() != null)
             {
-                slots.Add(InventoryPanel.GetChild(i).GetComponent<InventorySlot>());
+                slots.Add(_inventoryPanel.GetChild(i).GetComponent<InventorySlot>());
             }
         }
-        for (int i = 0; i < HotbarPanel.childCount; i++)
+        for (int i = 0; i < _hotbarPanel.childCount; i++)
         {
-            if (HotbarPanel.GetChild(i).GetComponent<InventorySlot>() != null)
+            if (_hotbarPanel.GetChild(i).GetComponent<InventorySlot>() != null)
             {
-                slots.Add(HotbarPanel.GetChild(i).GetComponent<InventorySlot>());
+                slots.Add(_hotbarPanel.GetChild(i).GetComponent<InventorySlot>());
             }
         }
     }
     private void OpenAndCloseInventory()
     {
-        if (Input.GetKeyDown(KeyCode.Tab)) // Открытие/закрытие инвентаря 
+        if (Input.GetKeyDown(KeyCode.Tab) && _menuManager.isMenuPaused == false) // Открытие/закрытие инвентаря 
         {
             isOpened = !isOpened;
 
             if(isOpened)
             {
-                InventoryBackground.SetActive(true);
-                InventoryPanel.gameObject.SetActive(true);
+                _inventoryBackground.SetActive(true);
+                _inventoryPanel.gameObject.SetActive(true);
                 gameObject.GetComponent<PlayerMouseMove>().enabled = false;
                 Cursor.lockState = CursorLockMode.None; // Анлочит курсор
                 Cursor.visible = true; // Делает видимым
             }
             else
             {
-                InventoryBackground.SetActive(false);
-                InventoryPanel.gameObject.SetActive(false);
+                _inventoryBackground.SetActive(false);
+                _inventoryPanel.gameObject.SetActive(false);
                 gameObject.GetComponent<PlayerMouseMove>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
                 Cursor.visible = false; // Делает невидимым
@@ -72,30 +75,30 @@ public class InventoryManager : MonoBehaviour
     }
     private void PickUpItem()
     {
-        Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward); // mainCamera.ScreenPointToRay(Input.mousePosition);
+        Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward); // mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
-        if (Input.GetKeyDown(KeyCode.E))
+        
+        if (Input.GetKey(KeyCode.E))
         {
-            if (Physics.Raycast(ray, out hit, reachDistance))
+            if (Physics.Raycast(ray, out hit, _reachDistance, 7))
             {
                 var ComponentItem = hit.collider.gameObject.GetComponent<Item>();
 
                 if (ComponentItem != null) // Проверка на сталкивание с Item
                 {
-                    AddItem(ComponentItem.item, ComponentItem.amount);
+                    AddItem(ComponentItem.item, ComponentItem.amount, hit);
                     Destroy(hit.collider.gameObject); // Уничтожает подобранный объект
                 }
 
-                Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.green);
+                Debug.DrawRay(ray.origin, ray.direction * _reachDistance, Color.green);
             }
             else
             {
-                Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.red);
+                Debug.DrawRay(ray.origin, ray.direction * _reachDistance, Color.red);
             }
         }
     }
-    private void AddItem(ItemScriptableObject _item, int _amount)
+    private void AddItem(ItemScriptableObject _item, int _amount, RaycastHit hit)
     {
         foreach (InventorySlot slot in slots) //Проходимся по всем слотам
         {
@@ -121,8 +124,10 @@ public class InventoryManager : MonoBehaviour
                 slot.isEmpty = false;
                 slot.SetIcon(_item.itemSprite);
                 slot.itemAmountText.text = _amount.ToString();
-                break;
+                return;
             }
+            continue;
         }
+        Instantiate(hit.collider.gameObject, gameObject.transform.position + Vector3.up + gameObject.transform.forward, hit.collider.gameObject.transform.rotation);
     }
 }
