@@ -7106,10 +7106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be092356c9a3e4d8637c0b5b596cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryPanel: {fileID: 512628352}
-  HotbarPanel: {fileID: 369762367}
+  InventoryPanel: {fileID: 0}
+  HotbarPanel: {fileID: 0}
   slots: []
-  InventoryBackground: {fileID: 952519658}
+  InventoryBackground: {fileID: 0}
   isOpened: 0
   reachDistance: 3
 --- !u!114 &1139654834
@@ -7124,7 +7124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc3c22af5b202c4f837d91e075ba0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reachDistance: 3
+  reachDistance: 1.5
   hotbarPanel: {fileID: 369762366}
 --- !u!114 &1139654835
 MonoBehaviour:

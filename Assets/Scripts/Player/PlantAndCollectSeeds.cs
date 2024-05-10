@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class PlantSeeds : MonoBehaviour
+public class PlantAndCollectSeeds : MonoBehaviour
 {
     private Camera _mainCamera;
     [SerializeField] private float reachDistance = 3f;
     [SerializeField] private GameObject hotbarPanel;
-    [SerializeField] private InventoryManager _inventoryManager;
+    private InventoryManager _inventoryManager;
 
     private void Start()
     {
