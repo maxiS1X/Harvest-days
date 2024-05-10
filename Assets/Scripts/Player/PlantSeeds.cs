@@ -3,16 +3,21 @@ using UnityEngine;
 public class PlantSeeds : MonoBehaviour
 {
     private Camera _mainCamera;
-    public float reachDistance = 3f;
-    public GameObject hotbarPanel;
+    [SerializeField] private float reachDistance = 3f;
+    [SerializeField] private GameObject hotbarPanel;
+    [SerializeField] private InventoryManager _inventoryManager;
 
-    void Update()
+    private void Start()
     {
         CameraSearch();
+    }
+    void Update()
+    {
         PlantAndCollect();
     }
     private void CameraSearch()
     {
+        _inventoryManager = gameObject.GetComponent<InventoryManager>();
         _mainCamera = Camera.main; // Поиск каммеры на сцене
     }
     private void PlantAndCollect()
@@ -22,11 +27,11 @@ public class PlantSeeds : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, reachDistance))
         {
-            if (Input.GetKey(KeyCode.Mouse1)) // При нажатии на RMB садится растение
+            if (Input.GetKey(KeyCode.Mouse1) && _inventoryManager.isOpened == false) // При нажатии на RMB садится растение
             {
                 Planting(hit);
             }
-            if (Input.GetKey(KeyCode.Mouse0)) // При нажатии на LMB собирается растение
+            if (Input.GetKey(KeyCode.Mouse0) && _inventoryManager.isOpened == false) // При нажатии на LMB собирается растение
             {
                 Collecting(hit);
             }
