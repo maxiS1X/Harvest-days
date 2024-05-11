@@ -1,7 +1,4 @@
-﻿using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class QuickslotInventory : MonoBehaviour
@@ -84,26 +81,26 @@ public class QuickslotInventory : MonoBehaviour
                 }
             }
         }
-        // Используем предмет по нажатию на левую кнопку мыши
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().item != null)
-            {
-                if (!inventoryManager.isOpened && quickslotParent.GetChild(currentQuickslotID).GetComponent<Image>().sprite == selectedSprite)
-                {
+        //// Используем предмет по нажатию на левую кнопку мыши
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    if (quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().item != null)
+        //    {
+        //        if (!inventoryManager.isOpened && quickslotParent.GetChild(currentQuickslotID).GetComponent<Image>().sprite == selectedSprite)
+        //        {
 
-                    if (quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().amount <= 1)
-                    {
-                        quickslotParent.GetChild(currentQuickslotID).GetComponentInChildren<DragAndDropItem>().NullifySlotData();
-                    }
-                    else
-                    {
-                        quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().amount--;
-                        quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().itemAmountText.text = quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().amount.ToString();
-                    }
-                }
-            }
-        }
+        //            if (quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().amount <= 1)
+        //            {
+        //                quickslotParent.GetChild(currentQuickslotID).GetComponentInChildren<DragAndDropItem>().NullifySlotData();
+        //            }
+        //            else
+        //            {
+        //                quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().amount--;
+        //                quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().itemAmountText.text = quickslotParent.GetChild(currentQuickslotID).GetComponent<InventorySlot>().amount.ToString();
+        //            }
+        //        }
+        //    }
+        //}
     }
 
 }

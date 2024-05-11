@@ -21,10 +21,9 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         // Если слот пустой, то мы не выполняем то что ниже return;
         if (oldSlot.isEmpty)
         {
-            Debug.Log("Why?");
             return;
         }
-        Debug.Log("Why not?");
+
         GetComponent<RectTransform>().position += new Vector3(eventData.delta.x, eventData.delta.y);
     }
 
