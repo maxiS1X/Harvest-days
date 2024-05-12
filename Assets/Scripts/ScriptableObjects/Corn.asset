@@ -17,3 +17,5 @@ MonoBehaviour:
   itemName: Corn
   itemDescription: Corn
   maxAmount: 30
+  canSell: 1
+  price: 60

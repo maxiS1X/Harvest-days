@@ -8,4 +8,6 @@ public class ItemScriptableObject : ScriptableObject
     public string itemName;
     public string itemDescription;
     public int maxAmount = 30;
+    public bool canSell = false;
+    public int price;
 }

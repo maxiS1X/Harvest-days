@@ -17,3 +17,5 @@ MonoBehaviour:
   itemName: Beet
   itemDescription: 
   maxAmount: 30
+  canSell: 1
+  price: 30
