@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour
     }
     public void SureStart()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
 
     }
     public void Continue()
