@@ -23,11 +23,10 @@ public class TradeSearch : MonoBehaviour
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward); // Пускаем луч из камеры
         RaycastHit hit;
 
-        if (Input.GetMouseButtonDown(1)) // 
+        if (Input.GetMouseButtonDown(1))
         {
             if (Physics.Raycast(ray, out hit, reachDistance) && hit.collider.GetComponent<Trader>() != null)
             {
-                Debug.Log("!null");
                 hit.collider.GetComponent<Trader>().DetermineID(hit.collider.GetComponent<Trader>()._tradersID);
             }
         }

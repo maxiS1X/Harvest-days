@@ -25,17 +25,21 @@ public class PlantAndCollectSeeds : MonoBehaviour
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward); // Пускаем луч из камеры
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, reachDistance))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
-            if (Input.GetKey(KeyCode.Mouse1) && _inventoryManager.isOpened == false) // При нажатии на RMB садится растение
+            if (Physics.Raycast(ray, out hit, reachDistance) && _inventoryManager.isOpened == false) // При нажатии на RMB садится растение
             {
                 Planting(hit);
             }
-            if (Input.GetKey(KeyCode.Mouse0) && _inventoryManager.isOpened == false) // При нажатии на LMB собирается растение
+        }
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            if (Physics.Raycast(ray, out hit, reachDistance) && _inventoryManager.isOpened == false) // При нажатии на LMB собирается растение
             {
                 Collecting(hit);
             }
         }
+
     }
     private void Planting(RaycastHit hit)
     {
@@ -103,19 +107,19 @@ public class PlantAndCollectSeeds : MonoBehaviour
             switch (cropID)
             {
                 case 0:
-                    Instantiate(plant.cropsItemPrefabs[0], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), plant.cropsItemPrefabs[0].transform.rotation);
+                    Instantiate(plant.cropsItemPrefabs[0], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), Quaternion.Euler(plant.cropsItemPrefabs[0].transform.rotation.x, Random.Range(0, 360), plant.cropsItemPrefabs[0].transform.rotation.z));
                     hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
                     Destroy(plant.gameObject);
                     break;
 
                 case 1:
-                    Instantiate(plant.cropsItemPrefabs[1], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), plant.cropsItemPrefabs[1].transform.rotation);
+                    Instantiate(plant.cropsItemPrefabs[1], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), Quaternion.Euler(0, Random.Range(0, 360), 90));
                     hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
                     Destroy(plant.gameObject);
                     break;
 
                 case 2:
-                    Instantiate(plant.cropsItemPrefabs[2], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), plant.cropsItemPrefabs[2].transform.rotation);
+                    Instantiate(plant.cropsItemPrefabs[2], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), Quaternion.Euler(0, Random.Range(0, 360), 90));
                     hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
                     Destroy(plant.gameObject);
                     break;

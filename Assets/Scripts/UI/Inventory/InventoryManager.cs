@@ -3,15 +3,16 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public List<InventorySlot> slots = new List<InventorySlot>(); // Создание списка слотов
+    [SerializeField] private float _reachDistance = 3f; // Дистанция с которой можно поднять предмет
+    [SerializeField] private GameObject _inventoryBackground;
+    [SerializeField] private GameObject _tradePanel;
     [SerializeField] private Transform _inventoryPanel;
     [SerializeField] private Transform _hotbarPanel;
-    [SerializeField] private GameObject _inventoryBackground;
-    [SerializeField] private float _reachDistance = 3f; // Дистанция с которой можно поднять предмет
     [SerializeField] private MenuPaused _menuManager;
-    public List<InventorySlot> slots = new List<InventorySlot>(); // Создание списка слотов
     private Camera _mainCamera;
     public bool isOpened;
-    
+
 
     private void Start()
     {
@@ -27,19 +28,16 @@ public class InventoryManager : MonoBehaviour
     }
     private void Update()
     {
-        OpenAndCloseInventory();
         PickUpItem();
+
+        if (Input.GetKeyDown(KeyCode.Tab) && _menuManager.isMenuPaused == false)
+        {
+            OpenAndCloseInventory();
+        }
     }
     private void ListFilling()
     {
         // Заполнение списка
-        for (int i = 0; i < _inventoryPanel.childCount; i++)
-        {
-            if (_inventoryPanel.GetChild(i).GetComponent<InventorySlot>() != null)
-            {
-                slots.Add(_inventoryPanel.GetChild(i).GetComponent<InventorySlot>());
-            }
-        }
         for (int i = 0; i < _hotbarPanel.childCount; i++)
         {
             if (_hotbarPanel.GetChild(i).GetComponent<InventorySlot>() != null)
@@ -47,36 +45,42 @@ public class InventoryManager : MonoBehaviour
                 slots.Add(_hotbarPanel.GetChild(i).GetComponent<InventorySlot>());
             }
         }
-    }
-    private void OpenAndCloseInventory()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab) && _menuManager.isMenuPaused == false) // Открытие/закрытие инвентаря 
+        for (int i = 0; i < _inventoryPanel.childCount; i++)
         {
-            isOpened = !isOpened;
+            if (_inventoryPanel.GetChild(i).GetComponent<InventorySlot>() != null)
+            {
+                slots.Add(_inventoryPanel.GetChild(i).GetComponent<InventorySlot>());
+            }
+        }
+        
+    }
+    public void OpenAndCloseInventory()
+    {
+        isOpened = !isOpened;
 
-            if(isOpened)
-            {
-                _inventoryBackground.SetActive(true);
-                _inventoryPanel.gameObject.SetActive(true);
-                gameObject.GetComponent<PlayerMouseMove>().enabled = false;
-                Cursor.lockState = CursorLockMode.None; // Анлочит курсор
-                Cursor.visible = true; // Делает видимым
-            }
-            else
-            {
-                _inventoryBackground.SetActive(false);
-                _inventoryPanel.gameObject.SetActive(false);
-                gameObject.GetComponent<PlayerMouseMove>().enabled = true;
-                Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
-                Cursor.visible = false; // Делает невидимым
-            }
+        if (isOpened)
+        {
+            _inventoryBackground.SetActive(true);
+            _inventoryPanel.gameObject.SetActive(true);
+            gameObject.GetComponent<PlayerMouseMove>().enabled = false;
+            Cursor.lockState = CursorLockMode.None; // Анлочит курсор
+            Cursor.visible = true; // Делает видимым
+        }
+        else
+        {
+            _inventoryBackground.SetActive(false);
+            _inventoryPanel.gameObject.SetActive(false);
+            gameObject.GetComponent<PlayerMouseMove>().enabled = true;
+            Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
+            Cursor.visible = false; // Делает невидимым
+            _tradePanel.SetActive(false);
         }
     }
     private void PickUpItem()
     {
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward); // mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        
+
         if (Input.GetKey(KeyCode.E))
         {
             if (Physics.Raycast(ray, out hit, _reachDistance, 7))
@@ -103,18 +107,18 @@ public class InventoryManager : MonoBehaviour
         {
             if (slot.item == _item) //Проверяем нет ли подобного айтема в слотах
             {
-                if(slot.amount + _amount <= _item.maxAmount)
+                if (slot.amount + _amount <= _item.maxAmount)
                 {
                     slot.amount += _amount; //Добавляем к уже имеющимся айтемам те, что подобрали
                     slot.itemAmountText.text = slot.amount.ToString();
                     return;
                 }
                 continue;
-                
+
             }
         }
         foreach (InventorySlot slot in slots) //Проходимся по всем слотам
-        { 
+        {
             if (slot.isEmpty == true) //Ищем свободный слот
             {
                 //Заполняем всё нужную инфу в слот

@@ -16,7 +16,7 @@ public class QuickslotInventory : MonoBehaviour
     {
         float mw = Input.GetAxis("Mouse ScrollWheel");
         // Используем колесико мышки
-        if (mw < 0.1 && _menuManager.isMenuPaused == false)
+        if (mw < 0.1 && _menuManager.isMenuPaused == false && quickslotParent.childCount < 5)
         {
             // Берем предыдущий слот и меняем его картинку на обычную
             quickslotParent.GetChild(currentQuickslotID).GetComponent<Image>().sprite = notSelectedSprite;
@@ -35,7 +35,7 @@ public class QuickslotInventory : MonoBehaviour
             // Что то делаем с предметом:
 
         }
-        if (mw > -0.1 && _menuManager.isMenuPaused == false)
+        if (mw > -0.1 && _menuManager.isMenuPaused == false && quickslotParent.childCount < 5)
         {
             // Берем предыдущий слот и меняем его картинку на обычную
             quickslotParent.GetChild(currentQuickslotID).GetComponent<Image>().sprite = notSelectedSprite;
@@ -58,7 +58,8 @@ public class QuickslotInventory : MonoBehaviour
         for(int i = 0; i < quickslotParent.childCount; i++)
         {
             // если мы нажимаем на клавиши 1 по 5 то...
-            if (Input.GetKeyDown((i + 1).ToString()) && _menuManager.isMenuPaused == false) {
+            if (Input.GetKeyDown((i + 1).ToString()) && _menuManager.isMenuPaused == false && quickslotParent.childCount < 5) 
+            {
                 // проверяем если наш выбранный слот равен слоту который у нас уже выбран, то
                 if (currentQuickslotID == i)
                 {
