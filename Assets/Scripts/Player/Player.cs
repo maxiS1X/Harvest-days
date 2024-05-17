@@ -42,7 +42,10 @@ public class Player : MonoBehaviour
     private void DoGravity(bool isGrounded)
     {
         if (isGrounded && _velocity.y < 0)
+        {
             _velocity.y = -1f;
+            
+        }
         _velocity.y -= _gravity * Time.fixedDeltaTime;
         _characterController.Move(_velocity * Time.fixedDeltaTime);
     }

@@ -22,7 +22,6 @@ public class MenuController : MonoBehaviour
     public void SureStart()
     {
         SceneManager.LoadScene(1);
-
     }
     public void Continue()
     {
@@ -44,6 +43,5 @@ public class MenuController : MonoBehaviour
     public void GameStartMenu()
     {
         SceneManager.LoadScene(1);
-
     }
 }

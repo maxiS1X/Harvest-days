@@ -239,7 +239,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3735520488735651653, guid: da7e7472d11a05247aed475b8e0cfe77, type: 3}
   m_PrefabInstance: {fileID: 1390526664134060680}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1896602409
+--- !u!114 &1896602404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,13 +248,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896602402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5944e896ddf14945afab5490527450a, type: 3}
+  m_Script: {fileID: 11500000, guid: 61bb80ce413953243adb138f3c9ca844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedWalk: 3
-  _gravity: 9.8
-  _jumpPower: 3
-  _speedRun: 5
+  speedMove: 4
+  speedRun: 8
+  speedCurrent: 0
+  smoothSpeed: 1.49
+  jump: 3
+  gravity: 1
 --- !u!1 &1958656275
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +431,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3735520488735651653, guid: da7e7472d11a05247aed475b8e0cfe77, type: 3}
       insertIndex: 5
-      addedObject: {fileID: 1896602409}
+      addedObject: {fileID: 1896602404}
     - targetCorrespondingSourceObject: {fileID: 8559593836159014766, guid: da7e7472d11a05247aed475b8e0cfe77, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1284110465}

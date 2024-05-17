@@ -9,6 +9,7 @@ public class MenuPaused : MonoBehaviour
     private void Start()
     {
         menuPaused.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     private void Update()
     {
