@@ -20,11 +20,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+
         Jump(Input.GetKey(KeyCode.Space) && _characterController.isGrounded);
         Run(Input.GetKey(KeyCode.LeftShift));
         Sit(Input.GetKey(KeyCode.LeftControl));
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
         _walkDirection = transform.right * x + transform.forward * z;
         _walkDirection.Normalize();
     }
