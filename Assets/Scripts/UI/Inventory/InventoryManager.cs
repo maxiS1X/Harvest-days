@@ -6,7 +6,7 @@ public class InventoryManager : MonoBehaviour
     public List<InventorySlot> slots = new List<InventorySlot>(); // Создание списка слотов
     [SerializeField] private float _reachDistance = 3f; // Дистанция с которой можно поднять предмет
     [SerializeField] private GameObject _inventoryBackground;
-    [SerializeField] private GameObject _tradePanel;
+    [SerializeField] private List<Trader> _trade = new List<Trader>();
     [SerializeField] private Transform _inventoryPanel;
     [SerializeField] private Transform _hotbarPanel;
     [SerializeField] private MenuPaused _menuManager;
@@ -73,7 +73,8 @@ public class InventoryManager : MonoBehaviour
             gameObject.GetComponent<PlayerMouseMove>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
             Cursor.visible = false; // Делает невидимым
-            _tradePanel.SetActive(false);
+            _trade[0]._tradePanel.SetActive(false);
+            _trade[1]._tradePanel.SetActive(false);
         }
     }
     private void PickUpItem()

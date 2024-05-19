@@ -5,10 +5,12 @@ using UnityEngine;
 public class Trader : MonoBehaviour
 {
     public int _tradersID;
-    [SerializeField] private GameObject _tradePanel;
+    [SerializeField] public GameObject _tradePanel;
     [SerializeField] private Transform _tradeSlots;
+    [SerializeField] private Transform _spawnProductPoint;
     [SerializeField] private InventoryManager _inventoryManager;
     [SerializeField] private Money _money;
+    [SerializeField] private List<GameObject> _product = new List<GameObject>();
     public List<InventorySlot> slots = new List<InventorySlot>();
 
     void Start()
@@ -37,7 +39,8 @@ public class Trader : MonoBehaviour
                 break;
 
             case 1:
-                BuyTrader();
+                _tradePanel.SetActive(true);
+                _inventoryManager.OpenAndCloseInventory();
                 break;
         }
     }
@@ -67,8 +70,29 @@ public class Trader : MonoBehaviour
         }
         _money.UpdateMoneyText();
     }
-    private void BuyTrader()
+    public void BuyTrader(int ID)
     {
+        switch(ID)
+        {
+            case 0:
+                Instantiate(_product[0], _spawnProductPoint.position, Quaternion.identity);
+                break;
 
+            case 1:
+                Instantiate(_product[1], _spawnProductPoint.position, Quaternion.identity);
+                break; 
+
+            case 2:
+                Instantiate(_product[2], _spawnProductPoint.position, Quaternion.identity);
+                break; 
+
+            case 3:
+                Instantiate(_product[3], _spawnProductPoint.position, Quaternion.identity);
+                break;
+
+            case 4:
+                Instantiate(_product[4], _spawnProductPoint.position, Quaternion.identity);
+                break;
+        }
     }
 }
