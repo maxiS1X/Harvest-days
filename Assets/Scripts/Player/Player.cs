@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         _walkDirection = transform.right * x + transform.forward * z;
+        _walkDirection.Normalize();
     }
 
     private void FixedUpdate()
