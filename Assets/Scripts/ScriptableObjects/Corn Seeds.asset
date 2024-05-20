@@ -18,3 +18,5 @@ MonoBehaviour:
   itemDescription: High-quality corn seeds for a bountiful harvest of sweet and crunchy
     carrots
   maxAmount: 30
+  canSell: 0
+  price: 1200

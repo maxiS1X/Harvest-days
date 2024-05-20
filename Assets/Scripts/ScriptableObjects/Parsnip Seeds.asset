@@ -17,3 +17,5 @@ MonoBehaviour:
   itemName: ParsnipSeeds
   itemDescription: 
   maxAmount: 30
+  canSell: 0
+  price: 300

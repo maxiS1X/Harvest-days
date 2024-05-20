@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -75,6 +76,7 @@ public class InventoryManager : MonoBehaviour
             Cursor.visible = false; // Делает невидимым
             _trade[0]._tradePanel.SetActive(false);
             _trade[1]._tradePanel.SetActive(false);
+            gameObject.GetComponent<Player>().enabled = true;
         }
     }
     private void PickUpItem()

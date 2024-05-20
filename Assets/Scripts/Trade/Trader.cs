@@ -5,13 +5,15 @@ using UnityEngine;
 public class Trader : MonoBehaviour
 {
     public int _tradersID;
-    [SerializeField] public GameObject _tradePanel;
+    public GameObject _tradePanel;
+    public List<InventorySlot> slots = new List<InventorySlot>(); 
+    [SerializeField] private List<GameObject> _product = new List<GameObject>();
+    [SerializeField] private GameObject _player;
     [SerializeField] private Transform _tradeSlots;
     [SerializeField] private Transform _spawnProductPoint;
     [SerializeField] private InventoryManager _inventoryManager;
     [SerializeField] private Money _money;
-    [SerializeField] private List<GameObject> _product = new List<GameObject>();
-    public List<InventorySlot> slots = new List<InventorySlot>();
+    
 
     void Start()
     {
@@ -36,11 +38,13 @@ public class Trader : MonoBehaviour
             case 0:
                 _tradePanel.SetActive(true);
                 _inventoryManager.OpenAndCloseInventory();
+                _player.GetComponent<Player>().enabled = false;
                 break;
 
             case 1:
                 _tradePanel.SetActive(true);
                 _inventoryManager.OpenAndCloseInventory();
+                _player.GetComponent<Player>().enabled = false;
                 break;
         }
     }
@@ -75,24 +79,45 @@ public class Trader : MonoBehaviour
         switch(ID)
         {
             case 0:
-                Instantiate(_product[0], _spawnProductPoint.position, Quaternion.identity);
+                if(_money.MoneyValue >= _product[0].GetComponent<Item>().item.price)
+                {
+                    Instantiate(_product[0], _spawnProductPoint.position, Quaternion.identity);
+                    _money.MoneyValue -= _product[0].GetComponent<Item>().item.price;
+                }
                 break;
 
             case 1:
-                Instantiate(_product[1], _spawnProductPoint.position, Quaternion.identity);
+                if (_money.MoneyValue >= _product[1].GetComponent<Item>().item.price)
+                {
+                    Instantiate(_product[1], _spawnProductPoint.position, Quaternion.identity);
+                    _money.MoneyValue -= _product[1].GetComponent<Item>().item.price;
+                }
                 break; 
 
             case 2:
-                Instantiate(_product[2], _spawnProductPoint.position, Quaternion.identity);
+                if (_money.MoneyValue >= _product[2].GetComponent<Item>().item.price)
+                {
+                    Instantiate(_product[2], _spawnProductPoint.position, Quaternion.identity);
+                    _money.MoneyValue -= _product[2].GetComponent<Item>().item.price;
+                }
                 break; 
 
             case 3:
-                Instantiate(_product[3], _spawnProductPoint.position, Quaternion.identity);
+                if (_money.MoneyValue >= _product[3].GetComponent<Item>().item.price)
+                {
+                    Instantiate(_product[3], _spawnProductPoint.position, Quaternion.identity);
+                    _money.MoneyValue -= _product[3].GetComponent<Item>().item.price;
+                }
                 break;
 
             case 4:
-                Instantiate(_product[4], _spawnProductPoint.position, Quaternion.identity);
+                if (_money.MoneyValue >= _product[4].GetComponent<Item>().item.price)
+                {
+                    Instantiate(_product[4], _spawnProductPoint.position, Quaternion.identity);
+                    _money.MoneyValue -= _product[4].GetComponent<Item>().item.price;
+                }
                 break;
         }
+        _money.UpdateMoneyText();
     }
 }
