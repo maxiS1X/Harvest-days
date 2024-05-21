@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66781c81c38169a4d8e372dc5d4f6dbd, type: 3}
   m_Name: RTX3090
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
-  itemSprite: {fileID: 0}
-  itemName: 
+  itemPrefab: {fileID: 1293916231032254056, guid: d7a865af26243c24d9c07d2d65169deb, type: 3}
+  itemSprite: {fileID: 21300000, guid: a9785c53b05b55d4da826e7f8f86d083, type: 3}
+  itemName: RTX3090
   itemDescription: 
-  maxAmount: 30
-  canSell: 0
-  price: 0
+  maxAmount: 1
+  canSell: 1
+  price: 21200

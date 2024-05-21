@@ -10395,6 +10395,10 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 1725035550}
+    - target: {fileID: 1769990999881828948, guid: 43d1d438a05bc57439babe4901613223, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a9785c53b05b55d4da826e7f8f86d083, type: 3}
     - target: {fileID: 1782411167511514495, guid: 43d1d438a05bc57439babe4901613223, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10653,7 +10657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6127121471473211674, guid: 43d1d438a05bc57439babe4901613223, type: 3}
       propertyPath: m_text
-      value: Coming Soon
+      value: 21200
       objectReference: {fileID: 0}
     - target: {fileID: 6538324184553884806, guid: 43d1d438a05bc57439babe4901613223, type: 3}
       propertyPath: m_text
@@ -10892,6 +10896,14 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1725035550}
+    - target: {fileID: 769681612472698561, guid: ccfbceebe65f58549bbc7ba7cf7e8b42, type: 3}
+      propertyPath: _product.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 769681612472698561, guid: ccfbceebe65f58549bbc7ba7cf7e8b42, type: 3}
+      propertyPath: _product.Array.data[4]
+      value: 
+      objectReference: {fileID: 1293916231032254056, guid: d7a865af26243c24d9c07d2d65169deb, type: 3}
     - target: {fileID: 1855649380364483701, guid: ccfbceebe65f58549bbc7ba7cf7e8b42, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7
