@@ -5,6 +5,7 @@ public class MenuPaused : MonoBehaviour
     [SerializeField] private GameObject menuPaused;
     [SerializeField] private KeyCode keyMenuPaused;
     public bool isMenuPaused = false;
+    [SerializeField] Player _player;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class MenuPaused : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 Time.timeScale = 0f;
+                _player.GetComponent<PlayerMouseMove>().enabled = false;
             }
             else
             {
@@ -34,6 +36,7 @@ public class MenuPaused : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 Time.timeScale = 1f;
+                _player.GetComponent<PlayerMouseMove>().enabled = true;
             }
         }
     }
@@ -43,6 +46,7 @@ public class MenuPaused : MonoBehaviour
         menuPaused.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        _player.GetComponent<PlayerMouseMove>().enabled = true;
         Time.timeScale = 1f;
     }
     public void MenuPausedSetting()

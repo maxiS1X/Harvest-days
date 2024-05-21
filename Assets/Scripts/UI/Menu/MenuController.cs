@@ -4,16 +4,12 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     private float _volume;
+    [SerializeField] TextNoSaves _text;
     public void BackToMainMenu()
     {
         SceneManager.LoadScene(0);
-
     }
-    public void NewGame()
-    {
-        SceneManager.LoadScene(2);
 
-    }
     public void Settings()
     {
         SceneManager.LoadScene(4);
@@ -22,11 +18,19 @@ public class MenuController : MonoBehaviour
     public void SureStart()
     {
         SceneManager.LoadScene(1);
+        PlayerPrefs.DeleteKey("Money");
     }
     public void Continue()
     {
-        var currentLevel = PlayerPrefs.GetInt("currentLevel");
-        SceneManager.LoadScene(currentLevel);
+
+        if (!PlayerPrefs.HasKey("Money"))
+        {
+            _text.NoSaves();
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
 
     }
 
