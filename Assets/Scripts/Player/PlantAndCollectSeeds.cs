@@ -79,6 +79,16 @@ public class PlantAndCollectSeeds : MonoBehaviour
 
                     AmountUpdate();
                     break;
+
+                case "CarrotSeeds": // Сдесь аналогично
+                    Instantiate(field.cropsPrefabs[3], hit.collider.gameObject.transform);
+
+                    field.FieldIsEmpty = false;
+                    field.GetCrop(3);
+
+                    AmountUpdate();
+                    break;
+
                 default:
                     Debug.Log("Item not found");
                     break;
@@ -120,6 +130,12 @@ public class PlantAndCollectSeeds : MonoBehaviour
 
                 case 2:
                     Instantiate(plant.cropsItemPrefabs[2], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), Quaternion.Euler(0, Random.Range(0, 360), 90));
+                    hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
+                    Destroy(plant.gameObject);
+                    break;
+
+                case 3:
+                    Instantiate(plant.cropsItemPrefabs[3], hit.collider.gameObject.transform.position + new Vector3(0, 0.5f, 0), Quaternion.Euler(plant.cropsItemPrefabs[3].transform.rotation.x, Random.Range(0, 360), plant.cropsItemPrefabs[3].transform.rotation.z));
                     hit.collider.gameObject.GetComponentInParent<Field>().FieldIsEmpty = true;
                     Destroy(plant.gameObject);
                     break;

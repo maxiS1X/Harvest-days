@@ -71,12 +71,15 @@ public class InventoryManager : MonoBehaviour
         {
             _inventoryBackground.SetActive(false);
             _inventoryPanel.gameObject.SetActive(false);
-            gameObject.GetComponent<PlayerMouseMove>().enabled = true;
-            Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
-            Cursor.visible = false; // Делает невидимым
             _trade[0]._tradePanel.SetActive(false);
             _trade[1]._tradePanel.SetActive(false);
-            gameObject.GetComponent<Player>().enabled = true;
+            
+            gameObject.GetComponent<PlayerMouseMove>().enabled = true;
+            gameObject.GetComponent<Player>().canMove = true;
+
+            Cursor.lockState = CursorLockMode.Locked; // Лочит курсор
+            Cursor.visible = false; // Делает невидимым
+            
         }
     }
     private void PickUpItem()

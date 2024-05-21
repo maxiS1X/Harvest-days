@@ -11,16 +11,17 @@ public class Player : MonoBehaviour
     private Vector3 _walkDirection;
     private Vector3 _velocity;
     private float _speed;
+    public bool canMove;
 
     private void Start()
     {
+        canMove = true;
         _speed = _speedWalk;
         _characterController = GetComponent<CharacterController>();
     }
 
     private void Update()
     {
-
         Jump(Input.GetKey(KeyCode.Space) && _characterController.isGrounded);
         Run(Input.GetKey(KeyCode.LeftShift));
         Sit(Input.GetKey(KeyCode.LeftControl));
@@ -38,7 +39,10 @@ public class Player : MonoBehaviour
 
     private void Walk(Vector3 direction)
     {
-        _characterController.Move(direction * _speedWalk * Time.fixedDeltaTime);
+        if (canMove == true)
+        {
+            _characterController.Move(direction * _speedWalk * Time.fixedDeltaTime);
+        }
     }
 
     private void DoGravity(bool isGrounded)

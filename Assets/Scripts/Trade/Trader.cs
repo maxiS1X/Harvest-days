@@ -37,14 +37,15 @@ public class Trader : MonoBehaviour
         {
             case 0:
                 _tradePanel.SetActive(true);
+                _player.GetComponent<Player>().canMove = false;
                 _inventoryManager.OpenAndCloseInventory();
-                _player.GetComponent<Player>().enabled = false;
+
                 break;
 
             case 1:
                 _tradePanel.SetActive(true);
+                _player.GetComponent<Player>().canMove = false;
                 _inventoryManager.OpenAndCloseInventory();
-                _player.GetComponent<Player>().enabled = false;
                 break;
         }
     }

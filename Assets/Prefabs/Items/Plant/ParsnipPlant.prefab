@@ -991,6 +991,7 @@ MonoBehaviour:
   - {fileID: 849524600719985252, guid: 66c76a080f06e2842b0a129fdecefd46, type: 3}
   - {fileID: 8436733944556887916, guid: b1e7c0c855dd6fa4498c0a1d003c7d3c, type: 3}
   - {fileID: 1325912079052762804, guid: 46cd6b546c562d54e9e4843f9149cc36, type: 3}
+  - {fileID: 8708220279540645744, guid: 59c28ae74ad1d124cbe1579b3003c38e, type: 3}
   plantRipe: 0
   crop: 0
 --- !u!1 &1211498866963838725
