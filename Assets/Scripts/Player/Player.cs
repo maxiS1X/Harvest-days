@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float _gravity;
     [SerializeField] private float _jumpPower;
     [SerializeField] private float _speedRun;
+    private float _normalHeight;
+    private float _sitHeight;
 
     private CharacterController _characterController;
     private Vector3 _walkDirection;
@@ -15,9 +17,12 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+       
         canMove = true;
         _speed = _speedWalk;
         _characterController = GetComponent<CharacterController>();
+        _normalHeight = _characterController.height;
+        _sitHeight = _normalHeight / 2;
     }
 
     private void Update()
@@ -69,6 +74,6 @@ public class Player : MonoBehaviour
 
     private void Sit(bool canSit)
     {
-        _characterController.height = canSit ? 0.5f : 1f;
+        _characterController.height = canSit ? _sitHeight : _normalHeight;
     }
 }
