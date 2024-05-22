@@ -22,9 +22,9 @@ public class MenuController : MonoBehaviour
     }
     public void Continue()
     {
-
         if (!PlayerPrefs.HasKey("Money"))
         {
+            _text.SetTrue();
             _text.NoSaves();
         }
         else

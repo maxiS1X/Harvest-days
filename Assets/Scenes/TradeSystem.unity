@@ -10944,6 +10944,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3264469380579286118, guid: ccfbceebe65f58549bbc7ba7cf7e8b42, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 396c5218252105543a477ab0047428e3, type: 2}
     - target: {fileID: 3811124390158870131, guid: ccfbceebe65f58549bbc7ba7cf7e8b42, type: 3}
       propertyPath: m_Name
       value: TraderBuy
@@ -11124,6 +11128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4987570169948612311, guid: 0e63513a312449043950d7a62058f580, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 396c5218252105543a477ab0047428e3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
