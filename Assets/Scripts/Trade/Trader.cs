@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Trader : MonoBehaviour
 {
-    public int _tradersID;
-    public GameObject _tradePanel;
-    public List<InventorySlot> slots = new List<InventorySlot>(); 
+    public List<InventorySlot> slots = new List<InventorySlot>();
     [SerializeField] private List<GameObject> _product = new List<GameObject>();
+
+    public int _tradersID;
+    public GameObject _tradePanel; 
+    
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _tradeSlots;
     [SerializeField] private Transform _spawnProductPoint;
