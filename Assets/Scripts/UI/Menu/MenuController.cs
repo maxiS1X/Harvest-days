@@ -48,4 +48,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    
+    public void ResetProgress()
+    {
+        PlayerPrefs.DeleteKey("Money");
+    }
 }
