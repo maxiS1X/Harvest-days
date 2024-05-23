@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float _gravity;
     [SerializeField] private float _jumpPower;
     [SerializeField] private float _speedRun;
+    [SerializeField] private AudioSource _walkSound;
+    [SerializeField] private AudioSource _runSound;
     private float _normalHeight;
     private float _sitHeight;
 
@@ -17,7 +19,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-       
         canMove = true;
         _speed = _speedWalk;
         _characterController = GetComponent<CharacterController>();
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
         float z = Input.GetAxisRaw("Vertical");
         _walkDirection = transform.right * x + transform.forward * z;
         _walkDirection.Normalize();
+        Sounds(Input.GetKey(KeyCode.LeftShift));
     }
 
     private void FixedUpdate()
@@ -75,5 +77,26 @@ public class Player : MonoBehaviour
     private void Sit(bool canSit)
     {
         _characterController.height = canSit ? _sitHeight : _normalHeight;
+    }
+
+    private void Sounds(bool canRun)
+    {
+        if ((_walkDirection.x != 0 || _walkDirection.z != 0) && canRun == false && _walkSound.isPlaying == false && _characterController.isGrounded == true)
+        {
+            _walkSound.Play();
+        }
+        if (_walkDirection.x == 0 && _walkDirection.z == 0 || canRun == true || _characterController.isGrounded == false)
+        {
+            _walkSound.Stop();
+        }
+
+        if ((_walkDirection.x != 0 || _walkDirection.z != 0) && canRun == true && _runSound.isPlaying == false && _characterController.isGrounded == true)
+        {
+                _runSound.Play();
+        }
+        if ((_walkDirection.x == 0 && _walkDirection.z == 0) || canRun == false || _characterController.isGrounded == false)
+        {
+            _runSound.Stop();
+        }
     }
 }

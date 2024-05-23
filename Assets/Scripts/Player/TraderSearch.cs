@@ -27,7 +27,7 @@ public class TradeSearch : MonoBehaviour
         {
             if (Physics.Raycast(ray, out hit, reachDistance) && hit.collider.GetComponent<Trader>() != null)
             {
-                hit.collider.GetComponent<Trader>().DetermineID(hit.collider.GetComponent<Trader>()._tradersID);
+                hit.collider.GetComponent<Trader>().OpenTradePanel();
             }
         }
     }

@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6000716bdbc82446aca014d54abb1be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ripeTime: 10
+  _ripeTime: 12.5
   _smallPlant: {fileID: 5169536471884616540}
   _mediumPlant: {fileID: 5170064027441694130}
   _bigPlant: {fileID: 5169405158328896875}

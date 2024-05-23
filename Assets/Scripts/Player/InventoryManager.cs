@@ -11,7 +11,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private Transform _inventoryPanel;
     [SerializeField] private Transform _hotbarPanel;
     [SerializeField] private MenuPaused _menuManager;
+    [SerializeField] private AudioSource _collectSound;
     private Camera _mainCamera;
+    
     public bool isOpened;
 
 
@@ -97,13 +99,14 @@ public class InventoryManager : MonoBehaviour
                 {
                     AddItem(ComponentItem.item, ComponentItem.amount, hit);
                     Destroy(hit.collider.gameObject); // ”ничтожает подобранный объект
+                    _collectSound.Play();
                 }
 
-                Debug.DrawRay(ray.origin, ray.direction * _reachDistance, Color.green);
+                //Debug.DrawRay(ray.origin, ray.direction * _reachDistance, Color.green);
             }
             else
             {
-                Debug.DrawRay(ray.origin, ray.direction * _reachDistance, Color.red);
+                //Debug.DrawRay(ray.origin, ray.direction * _reachDistance, Color.red);
             }
         }
     }

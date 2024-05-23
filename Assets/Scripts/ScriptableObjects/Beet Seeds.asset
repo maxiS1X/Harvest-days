@@ -18,4 +18,4 @@ MonoBehaviour:
   itemDescription: 
   maxAmount: 30
   canSell: 0
-  price: 600
+  price: 900
