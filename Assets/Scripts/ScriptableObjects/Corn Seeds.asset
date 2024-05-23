@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Corn Seeds
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 3641068880653412835, guid: 5b778a400905b9d4295a3e1b791ab28b, type: 3}
-  itemSprite: {fileID: 21300000, guid: 429af6680843fcc4281a52bfab62dd4a, type: 3}
+  itemSprite: {fileID: 21300000, guid: c031a70df1db95844ad196a56a9f96bf, type: 3}
   itemName: CornSeeds
   itemDescription: High-quality corn seeds for a bountiful harvest of sweet and crunchy
     carrots

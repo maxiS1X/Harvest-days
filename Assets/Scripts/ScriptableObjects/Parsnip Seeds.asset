@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Parsnip Seeds
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 7105296233969611228, guid: 654a22bc016159f48af2866250fd384a, type: 3}
-  itemSprite: {fileID: 21300000, guid: 5e8abaca4a0c38f42ba69ba677a1379f, type: 3}
+  itemSprite: {fileID: 21300000, guid: 82ad4886d1d1e6e4384692dcfe7764ee, type: 3}
   itemName: ParsnipSeeds
   itemDescription: 
   maxAmount: 30

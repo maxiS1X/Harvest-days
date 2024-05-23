@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Carrot Seeds
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 7105296233969611228, guid: 654a22bc016159f48af2866250fd384a, type: 3}
-  itemSprite: {fileID: 21300000, guid: 87337b423e460e54b84d10adfbc1e867, type: 3}
+  itemSprite: {fileID: 21300000, guid: f1542f3e40bddc34a9cd073fa198daeb, type: 3}
   itemName: CarrotSeeds
   itemDescription: 
   maxAmount: 30
